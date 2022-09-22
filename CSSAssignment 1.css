@@ -1,0 +1,50 @@
+body{
+    background-color: #484141;    
+}
+
+header{
+    background-color: green;
+    height: 50px;
+}
+
+
+/* header::after{
+    content: '';
+    display: table;
+    clear: both;
+} */
+
+nav ul{
+    float: right; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 60px;
+    margin-top: 17px;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+nav a:hover{
+    color: #444;
+}
+
+h1{
+   text-align: center;
+   margin-top: 300px;
+   color: white;
+}
+
+h2{
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
