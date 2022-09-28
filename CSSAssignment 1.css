@@ -4,14 +4,6 @@ body{
     color: white;
 }
 
-h1{
-   text-align: center;
-}
-
-h2{
-    text-align: center;
-}
-
 nav {
     background: linear-gradient(to bottom, black, #555555);
     display: flex;
@@ -44,61 +36,129 @@ nav ul {
 nav a {
     text-decoration: none;
     padding: 10px 20px;
-    color: white;
-    transition: background-color 0.5s ease;
+    color: rgb(159, 153, 153);
+    transition: background-color 0.9s ease;
 }
 
 nav a:hover {
     background-color: green;
-    background: linear-gradient(15deg, green, black 200%);
+    background: linear-gradient(45deg, green, black 140%);
 }
+
+
+
 
 .Home {
-    margin-top: 200px;
-}
-
-.About {
-    margin-top: 945px;
-    text-align: center;
-    padding: 0 300px;
-}
-
-video { 
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    position: a;
-    width: 900px; 
-    padding: 50px; 
-    background-color:green; 
-    border:10px white solid; 
-    box-shadow: 10px 10px 5px black; 
+    margin-top: 570px;
 }
 
 h1{
-    margin-top: 200px;
+    text-align: center;
+ }
+ 
+ h2{
+     text-align: center;
+ }
+
+
+
+
+
+.About {
+    margin-top: 1%;
+    text-align: center;
+    padding: 0 30%;
 }
 
-input[type=text],[type=email],[type=text],select, textarea {
+.container{
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+video { 
+    height: 290px;
+    width: 40%;
+    border:1px rgb(0, 255, 0) solid; 
+    box-shadow: 20px 25px 20px black; 
+}
+
+#PC_1{
+    height: 290px;
+    width: 25%;
+    object-fit: cover;
+}
+#PC_2{
+    height: 290px;
+    width: 25%;
+    object-fit: cover;
+}
+
+h1{
+    margin-top: 7%;
+}
+
+
+
+
+
+
+.Projects{
+
+}
+
+h3{
+
+}
+
+p1{
+    margin-left: 5%;
+}
+
+p2{
+    margin-left: 5%;
+}
+
+.form-box{
+    width: 40%;
+    height: 25%;    
+    background: linear-gradient(black 45%, #00ef14 200% );
+    border: 2px solid rgb(62, 235, 4);
+    padding-top: 3.5%;
+    padding-bottom: 4%;
+    
+    position: absolute;
+    top: 1;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+form{
+    background-color: linear-gradient(45deg, green, black 500%);
+}
+input[type=text],[type=email],[type=tel],select, textarea {
     font-family: 'Nunito', sans-serif;
-    border: 3px solid rgb(0, 155, 0);
+    border: 2px solid rgb(0, 155, 0);
     display: block;
-    width: 85%;
+    width: 45%;
     box-sizing: border-box;
-    margin-top: ;
     margin: auto;
     background-color: #242424;
     position: 
 }
 
-input[type=message], select {
+input[type=message], select{
     display: block;
     width: 85%;
     height: 100%;
     padding: 12px 20px;
-    border: 1px solid rgb(124, 16, 231);
-    border-radius: 8px;
+    border-radius: 800px;
     box-sizing: border-box;
     margin:auto;
     font-family: 'Nunito', sans-serif;
@@ -112,8 +172,14 @@ input[type=submit],select{
     margin-right: auto;
     margin-left: auto;
     margin-top: 5%;
+    width: 200px;
 }
 
+input[type=submit]:hover{
+    background-color: green;
+    background: linear-gradient(45deg, green, black 80%);
+    cursor: pointer;
+}
 
 textarea{
     resize: none;
