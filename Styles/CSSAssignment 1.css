@@ -50,8 +50,8 @@ nav a:hover {
 
 /*HOME PAGE*/
 .Home {
-   margin-top: 30%;
-   margin-bottom: 50%;
+   margin-top: 20%;
+   margin-bottom: 10%;
    margin-left: relative;
    text-align: center;
 }
@@ -66,7 +66,7 @@ nav a:hover {
 }
 
 .About article {
-    padding: 0 30%;
+    padding: 4% 30%;
 }
 
 .container{
@@ -229,8 +229,8 @@ footer {
 
     /*HOME PAGE*/
     .Home {
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 30%;
+        margin-bottom: 10%;
         margin-left: relative;
         text-align: center;
      }
@@ -267,7 +267,7 @@ footer {
     }    
     .About article{
        margin-top: 1%;
-       padding: 0% 5% 20%;
+       padding: 10% 5% 20%;
        text-align: center;
     }
 
@@ -362,7 +362,7 @@ footer {
     }    
     .About article{
        margin-top: 1%;
-       padding: 0% 5% 20%;
+       padding: 10% 5% 20%;
        text-align: center;
     }
 
