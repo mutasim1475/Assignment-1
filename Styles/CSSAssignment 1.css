@@ -1,3 +1,4 @@
+
 body{
     background-color: #242424;    
     margin: 0;
@@ -45,9 +46,9 @@ nav a:hover {
     background: linear-gradient(45deg, green, black 140%);
 }
 
+
+
 /*HOME PAGE*/
-
-
 .Home {
    margin-top: 30%;
    margin-bottom: 50%;
@@ -58,10 +59,10 @@ nav a:hover {
 
 
 /*ABOUT PAGE*/
-
 .About {
     margin-top: 1%;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .About article {
@@ -103,8 +104,8 @@ h1{
 }
 
 
-/*PROJECT PAGE*/
 
+/*PROJECT PAGE*/
 h3{
     margin-left: 7%;
     margin-top: 10%;
@@ -123,15 +124,15 @@ p2{
 }
 
 
-/*CONTACT PAGE*/
 
+/*CONTACT PAGE*/
 h1{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 2%;
 }
 .form-box{
-    width: 40%;
-    height: 25%;    
+    width: 30%;
+    height: 50%;    
     background: linear-gradient(black 45%, #00ef14 200% );
     border: 2px solid rgb(62, 235, 4);
     padding-top: 4%;
@@ -143,15 +144,17 @@ h1{
     left: 0;
     right: 0;
     margin:auto;
+    flex-direction: column;
 }
 form{
     background-color: linear-gradient(45deg, green, black 500%);
 }
+
 input[type=text],[type=email],[type=tel],select, textarea {
     font-family: 'Nunito', sans-serif;
     border: 2px solid rgb(0, 155, 0);
     display: block;
-    width: 45%;
+    width: 55%;
     box-sizing: border-box;
     margin: auto;
     background-color: #242424;
@@ -177,7 +180,7 @@ input[type=submit],select{
     margin-right: auto;
     margin-left: auto;
     margin-top: 5%;
-    width: 30%;
+    width: 30%; 
 }
 
 input[type=submit]:hover{
@@ -195,7 +198,7 @@ textarea{
 input {
     width: 100px;
     line-height: 25px;
-    margin-right: auto;
+    margin-right: auto;      
     margin-left:auto;
     margin-top: 5%;
     display: block;
@@ -205,7 +208,6 @@ input {
 
 
 /*FOOTER*/
-
 footer {
     position: fixed;
     bottom: 0;
@@ -214,99 +216,13 @@ footer {
 
 
 
-
-/*MEDIA QUERIES*/
-
-@media only screen and (max-width: 500px){     
-    nav ul {
-        gap: 15px;
-        height: 100%;
-    }
-    
-    nav a {
-        padding: 10px 5px;      
-    }
-
-    /*HOME PAGE*/
-    .Home {
-        margin-top: 70%;
-        margin-bottom: 50%;
-        margin-left: relative;
-        text-align: center;
-     }
-
-    
-     /*ABOUT PAGE*/
-
-    .container{
-        flex-direction: column;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5%;
-    }
-    
-    video { 
-        height: 250px;
-        width: 100%;
-        border:2px rgb(0, 190, 0) solid; 
-        box-shadow: 20px 25px 20px black; 
-        object-fit: cover;
-    }
-    
-    #PC_1{
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-        padding-bottom: 6%;
-    }
-    #PC_2{
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-        padding-top: 10%;
-    }    
-    .About article{
-       margin-top: 1%;
-       padding: 0% 5% 20%;
-       text-align: center;
-    }
-
-    /*PROJECT PAGE*/
-    p1{
-        position: relative;
-        padding-right: 70%;
-    }
-     a{
-        color: #00ef14;
-     }
-    p2{
-        position: relative;
-    }
-
-    /*CONTACT PAGE*/
-    .form-box{
-        width: 90%;
-        height: 35%;   
-    }
-    
-    input[type=text],[type=email],[type=tel],select, textarea {
-        margin-top: 1.5%;
-        width: 75%;
-    }
-    
-   
-
-    
-}
-
-@media only screen and (max-width: 900px){     
+/*MEDIA QUERIES FOR TABLET*/
+@media only screen and (max-width: 960px){     
     nav ul {
         gap: 50px;
         height: 100%;
     }
-    
+                     
     nav a {
         padding: 10px 5px;      
     }
@@ -369,17 +285,108 @@ footer {
 
     /*CONTACT PAGE*/
     .form-box{
-        width: 80%;
-        height: 35%;   
+        width: 50%;
+        height: 55%;   
     }
     
     input[type=text],[type=email],[type=tel],select, textarea {
         margin-top: 1.5%;
         width: 75%;
+        height: 30%;
     }
     
     input[type=submit],select{
         margin-top: 8%;
         width: 30%;
     }
+}  
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES FOR PHONE*/
+@media only screen and (max-width: 500px){     
+    nav ul {
+        gap: 15px;
+        height: 100%;
+    }
+    
+    nav a {
+        padding: 10px 5px;      
+    }
+
+    /*HOME PAGE*/
+    .Home {
+        margin-top: 70%;
+        margin-bottom: 50%;
+        margin-left: relative;
+        text-align: center;
+     }
+           
+    
+     /*ABOUT PAGE*/
+
+    .container{
+        flex-direction: column;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    
+    video { 
+        height: 250px;
+        width: 100%;
+        border:2px rgb(0, 190, 0) solid; 
+        box-shadow: 20px 25px 20px black; 
+        object-fit: cover;
+    }
+    
+    #PC_1{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        padding-bottom: 6%;
+    }
+    #PC_2{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        padding-top: 10%;
+    }    
+    .About article{
+       margin-top: 1%;
+       padding: 0% 5% 20%;
+       text-align: center;
+    }
+
+    /*PROJECT PAGE*/
+    p1{
+        position: relative;
+        padding-right: 70%;
+    }
+     a{
+        color: #00ef14;
+     }
+    p2{
+        position: relative;
+    }
+
+    /*CONTACT PAGE*/
+    .form-box{
+        width: 70%;
+        height: 45%;   
+    }
+    
+    input[type=text],[type=email],[type=tel],select, textarea {
+        margin-top: 1.5%;
+        width: 75%;
+        height: 30%;
+    }    
 }
