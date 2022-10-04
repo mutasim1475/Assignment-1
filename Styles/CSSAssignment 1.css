@@ -7,6 +7,7 @@ body{
 
 nav {
     background: linear-gradient(to bottom, black, #555555);
+    /*Flex Box, see link 3*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,25 +21,31 @@ nav div {
 }
 
 nav img {
-    width: 100%;
-    height: 100%;
+    margin-top: 3%;
+    width: auto;
+    height: 95%;
     border-radius: 50%;
 }
 
 nav ul {
+    /*Removes bullet points from links, see link 4*/
     list-style: none;
     padding: 0;
     margin: 0;
+    /*Flex Box, see link 3*/
     display: flex;
     gap: 15px;
     height: 100%;
 }
 
 nav a {
+    /*Removes underline from links, see link 5*/
     text-decoration: none;
     padding: 10px 20px;
     color: rgb(159, 153, 153);
     transition: background-color 0.9s ease;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -54,6 +61,7 @@ nav a:hover {
    margin-bottom: 10%;
    margin-left: relative;
    text-align: center;
+   font-family: 'Raleway', sans-serif;
 }
 
 
@@ -74,6 +82,7 @@ nav a:hover {
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
+    /*Flex Box, see link 3*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,17 +94,20 @@ video {
     width: 40%;
     border:2px rgb(0, 190, 0) solid; 
     box-shadow: 20px 25px 20px black; 
+    /*Tells a video or an image how ti should be rezised to fit in its container*/
     object-fit: cover;
 }
 
 #PC_1{
     height: 290px;
     width: 25%;
+    /*Tells a video or an image how ti should be rezised to fit in its container*/
     object-fit: cover;
 }
 #PC_2{
     height: 290px;
     width: 25%;
+    /*Tells a video or an image how ti should be rezised to fit in its container*/
     object-fit: cover;
 }
 
@@ -109,10 +121,14 @@ h1{
 h3{
     margin-left: 7%;
     margin-top: 10%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
 }
 
 p1{
     margin-left: 11%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 a{
@@ -121,6 +137,8 @@ a{
 
 p2{
     margin-left: 11%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 
@@ -129,6 +147,7 @@ p2{
 h1{
     text-align: center;
     margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
 }
 .form-box{
     width: 30%;
@@ -137,30 +156,29 @@ h1{
     border: 2px solid rgb(62, 235, 4);
     padding-top: 4%;
     padding-bottom: 3%;
-    
+    /*Follwing lines of code helps determine the position of elements, see link 7*/
     position: absolute;
     top: 1;
     bottom: 1;
     left: 0;
     right: 0;
     margin:auto;
+    /*Flex Box, see link 3*/
     flex-direction: column;
 }
-form{
-    background-color: linear-gradient(45deg, green, black 500%);
-}
 
+/*Specifies input type, see link 8*/
 input[type=text],[type=email],[type=tel],select, textarea {
-    font-family: 'Nunito', sans-serif;
     border: 2px solid rgb(0, 155, 0);
     display: block;
     width: 55%;
     box-sizing: border-box;
     margin: auto;
     background-color: #242424;
-    position: 
+    font-family: 'Raleway', sans-serif;
 }
 
+/*Specifies input type, see link 8*/
 input[type=message], select{
     display: block;
     width: 85%;
@@ -169,29 +187,31 @@ input[type=message], select{
     border-radius: 800px;
     box-sizing: border-box;
     margin:auto;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 input[type=submit],select{
     background-color: rgb(51, 47, 47);
     color: white;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: 15%;
     width: 30%; 
 }
 
 input[type=submit]:hover{
     background-color: green;
     background: linear-gradient(45deg, green, black 80%);
+    /*Changes the cursor into a pointer, see link 9*/
     cursor: pointer;
 }
 
 textarea{
     resize: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #ffffff;
 }
 
@@ -215,8 +235,8 @@ footer {
 }
 
 
-
-/*MEDIA QUERIES FOR TABLET*/
+/*If the screen is less than 960px. do this. Equivalent of having a sperate css sheet for tablet. See link 1*/
+/*MEDIA QUERIES FOR TABLET */
 @media only screen and (max-width: 960px){     
     nav ul {
         gap: 50px;
@@ -239,8 +259,10 @@ footer {
      /*ABOUT PAGE*/
 
     .container{
+        /*Instead of arranging elements in a row by defaults, arrange them in a column, see link 3*/
         flex-direction: column;
         position: relative;
+        /*Flex Box, see link 3*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -252,6 +274,7 @@ footer {
         width: 100%;
         border:2px rgb(0, 190, 0) solid; 
         box-shadow: 20px 25px 20px black; 
+        /*Tells a video or an image how ti should be rezised to fit in its container*/
         object-fit: cover;
     }
     
@@ -288,7 +311,7 @@ footer {
         width: 50%;
         height: 55%;   
     }
-    
+    /*Specifies input type, see link 8*/
     input[type=text],[type=email],[type=tel],select, textarea {
         margin-top: 1.5%;
         width: 75%;
@@ -296,7 +319,7 @@ footer {
     }
     
     input[type=submit],select{
-        margin-top: 8%;
+        margin-top:18%;
         width: 30%;
     }
 }  
@@ -308,7 +331,7 @@ footer {
 
 
 
-
+/*If the screen is less than 960px. do this. Equivalent of having a sperate css sheet for tablet. See link 1*/
 /*MEDIA QUERIES FOR PHONE*/
 @media only screen and (max-width: 500px){     
     nav ul {
@@ -334,6 +357,7 @@ footer {
     .container{
         flex-direction: column;
         position: relative;
+        /*Flex Box, see link 3*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -345,18 +369,21 @@ footer {
         width: 100%;
         border:2px rgb(0, 190, 0) solid; 
         box-shadow: 20px 25px 20px black; 
+        /*Tells a video or an image how ti should be rezised to fit in its container*/
         object-fit: cover;
     }
     
     #PC_1{
         height: 400px;
         width: 100%;
+        /*Tells a video or an image how ti should be rezised to fit in its container*/
         object-fit: cover;
         padding-bottom: 6%;
     }
     #PC_2{
         height: 400px;
         width: 100%;
+        /*Tells a video or an image how it should be rezised to fit in its container*/
         object-fit: cover;
         padding-top: 10%;
     }    
@@ -384,9 +411,15 @@ footer {
         height: 45%;   
     }
     
+    /*Specifies input type, see link 8*/
     input[type=text],[type=email],[type=tel],select, textarea {
         margin-top: 1.5%;
         width: 75%;
         height: 30%;
     }    
+    
+    input[type=submit],select{
+        margin-top: 10%;
+    }
+
 }
