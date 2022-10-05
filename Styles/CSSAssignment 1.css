@@ -68,6 +68,14 @@ nav a {
    font-family: 'Raleway', sans-serif;
 }
 
+.Home a{
+    /*Removes underline from links, see link 5*/
+    text-decoration: none;
+}
+
+.Home h2{
+    font-size: larger;
+}
 
 /*ABOUT PAGE*/
 .About {
