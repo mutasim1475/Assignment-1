@@ -34,7 +34,9 @@ nav ul {
     margin: 0;
     /*Flex Box, see link 3*/
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
     height: 100%;
 }
 
@@ -144,27 +146,25 @@ p2{
 
 
 /*CONTACT PAGE*/
+.Contact{
+    /*Flex Box, see link 3*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: center;
+}
 h1{
     text-align: center;
-    margin-top: 2%;
+    margin-top: 200px;
     font-family: 'Raleway', sans-serif;
 }
 .form-box{
     width: 30%;
-    height: 50%;    
     background: linear-gradient(black 45%, #00ef14 200% );
     border: 2px solid rgb(62, 235, 4);
     padding-top: 4%;
     padding-bottom: 3%;
     /*Follwing lines of code helps determine the position of elements, see link 7*/
-    position: absolute;
-    top: 1;
-    bottom: 1;
-    left: 0;
-    right: 0;
-    margin:auto;
-    /*Flex Box, see link 3*/
-    flex-direction: column;
 }
 
 /*Specifies input type, see link 8*/
@@ -331,16 +331,25 @@ footer {
 
 
 
-/*If the screen is less than 960px. do this. Equivalent of having a sperate css sheet for tablet. See link 1*/
+/*If the screen is less than 500px. do this. Equivalent of having a sperate css sheet for tablet. See link 1*/
 /*MEDIA QUERIES FOR PHONE*/
 @media only screen and (max-width: 500px){     
     nav ul {
-        gap: 15px;
+        gap: 0px;
         height: 100%;
+        /*Flex Box, see link 3*/
+        flex: 1;
+        justify-content: space-between;
     }
     
     nav a {
         padding: 10px 5px;      
+    }
+
+    nav{
+        /*Flex Box, see link 3*/
+        padding: 4px;
+        gap: 20px;
     }
 
     /*HOME PAGE*/
